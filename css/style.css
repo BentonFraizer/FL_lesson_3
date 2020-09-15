@@ -1,0 +1,101 @@
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* ---------------------------- */
+
+/* Селектор id */
+#id-subtitle {
+  color: rgb(0, 204, 204);
+}
+/* Селектор тега */
+h2 {
+  color: blue;
+}
+
+/* Смешанный селектор */
+div.mixed {
+  color: chocolate;
+}
+
+/* Селектор класса */
+.class {
+  color: coral;
+}
+
+/* Все объекты с классами 
+content И text одновременно */
+.first.second {
+  color: crimson;
+}
+
+.some-class,
+#some-id,
+h3 {
+  color: darkcyan;
+}
+
+/* Все объекты с классам text, внутри
+  всех объектов с классом content
+ */
+.block-outer .block-inner {
+  color: rgb(4, 175, 4);
+}
+
+/* Все теги А с классом text */
+a.text {
+  color: crimson;
+}
+
+/* Все теги А внутри всех 
+объектов с классом text */
+.text a {
+  color: darkgreen;
+}
+
+/* теги А первого уровня внутри всех 
+объектов с классом text */
+.parent > a {
+  color: rgb(255, 2, 255);
+}
+
+/* обращение ко всем объектам с классом .block после 
+объектов с классом text */
+.neighbour-prev + .neighbour-next {
+  color: rgb(3, 209, 3);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.info p:last-child {
+  color: red;
+}
